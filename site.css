@@ -1,0 +1,525 @@
+body {
+    margin: 0;
+}
+
+/* top banner start */
+.banner {
+    background-color: black;
+    width: 1420px;
+    height: 700px;
+    margin: 3% 8% 5% 8%;
+    border-radius: 30px;
+}
+
+.banner-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 6%;
+    margin-left: 10%;
+
+}
+
+.banner-text {
+    width: 500px;
+}
+
+.banner-text h1 {
+    color: azure;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.banner-text p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 26px;
+    padding-bottom: 10px;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    background-color: red;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-right: 70%;
+    border-radius: 5px;
+    transition: transform .4s;
+}
+
+#button:hover {
+    transform: scale(1.2);
+}
+
+#button>.material-symbols-outlined {
+    padding-left: 6%;
+}
+
+.banner img {
+    width: 581px;
+    height: 613px;
+    top: 450px;
+}
+
+/* top banner end */
+
+
+/********** Match-details style start **********/
+.match-details {
+    display: grid;
+    grid-template-columns: repeat(2, 0.80fr);
+}
+
+
+/* Menu-box style start */
+.menu-box {
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 312px;
+    height: 312px;
+    top: 100%;
+    background: #161616;
+    border-radius: 10px;
+    margin: 0% 0% 10% 25%;
+}
+
+.menu {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 30px 25px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 0%;
+    margin-bottom: 15%;
+}
+
+#Upcoming-Match {
+    background-color: white;
+    padding: 15px 48px;
+}
+
+#Upcoming-Match:hover,
+#Upcoming-Match:active,
+#Upcoming-Match:visited {
+    background-color: red;
+}
+
+#All-Group {
+    background-color: white;
+    padding: 15px 85px;
+}
+
+#All-Group:hover,
+#All-Group:active {
+    background-color: red;
+}
+
+#Blog {
+    background-color: white;
+    padding: 15px 107px;
+}
+
+#Blog:hover,
+#Blog:active {
+    background-color: red;
+}
+
+
+/* Menu-box style end */
+
+
+/* blogs style start   */
+
+.match-time {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    row-gap: 35px;
+    margin: 0% 0% 10% 0%;
+    top: 80%;
+}
+
+
+.item {
+    text-align: center;
+    width: 312px;
+    height: 242px;
+    border: 1px solid rgb(204, 195, 195);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 8px;
+
+}
+
+.match {
+    padding: 8% 5% 5% 5%;
+}
+
+.flag {
+    display: flex;
+    align-content: center;
+    padding: 10% 3% 5% 5%;
+}
+
+.flag>p {
+    padding: 0px 20px;
+}
+
+.date-time {
+    color: rgba(22, 22, 22, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+}
+
+/* blogs style end  */
+/********** Match-details style start **********/
+
+/* footer style start  */
+footer {
+    color: #B9B9B9;
+    text-align: center;
+    background-color: #161616;
+    width: 100%;
+    height: 444px;
+    left: 0px;
+    top: 2090px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 5%;
+}
+
+
+.footer-menu {
+    padding: 0px 10%;
+}
+
+hr {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.btn {
+    color: #B9B9B9;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+.btn:hover {
+    color: red;
+}
+
+footer>img {
+    width: 20px;
+    height: auto;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.fa-brands {
+    color: gray;
+    padding: 50px 25px;
+    transition: transform .4s;
+}
+
+.fa-brands:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* footer style end  */
+
+
+
+/*---------- Responsive web style start ----------*/
+
+
+
+/*---- Phone responsive start -----*/
+/* banner responsive  */
+@media only screen and (max-width:688px) {
+    .banner {
+        width: 100%;
+        height: 840px;
+        text-align: center;
+        justify-items: center;
+        margin: 0%;
+    }
+
+    .banner-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-right: 5%;
+    }
+
+    .banner-text {
+        width: 280px;
+    }
+
+    .banner-text h1 {
+        color: azure;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .banner-text p {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px;
+        font-weight: 400px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+
+    #button {
+        margin-right: 23%;
+        margin-left: 22.5%;
+    }
+
+    .banner img {
+        position: sticky;
+        width: auto;
+        height: auto;
+        padding-top: 69px;
+        top: 800px;
+        right: 5%;
+    }
+
+    /* banner responsive end  */
+
+    /* Match-details responsive */
+    .match-details {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+
+    }
+
+    .menu-box {
+        margin: 100px 10px 100px 0px;
+    }
+
+    .match-time {
+        grid-template-columns: repeat(1, 0.70fr);
+    }
+
+    /* Match-details responsive  */
+    /* Footer responsive */
+    footer {
+        height: 560px;
+        margin-top: 20%;
+        margin-bottom: 0;
+    }
+
+    .menu-link {
+        display: grid;
+        grid-template-rows: repeat(6, 0.5fr);
+    }
+
+    /* Footer responsive end */
+}
+
+/*---- Phone responsive end -----*/
+
+/*---- Tablet responsive -----*/
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    /* Banner responsive */
+    .banner {
+        width: 100%;
+        margin: 2px;
+    }
+
+    .banner-details {
+        display: grid;
+        grid-template-columns: repeat(2, 0.75fr);
+        column-gap: 20px;
+        padding-top: 6%;
+        margin-left: 5%;
+    }
+
+    .banner-text {
+        width: 250px;
+    }
+
+    .banner-text h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 26px;
+        padding-bottom: 10px;
+    }
+
+    #button {
+        margin-right: 40%;
+    }
+
+    .banner img {
+        width: 450px;
+        height: auto;
+        padding-top: 175px;
+        top: 800px;
+        right: 5%;
+    }
+
+    /* Banner responsive end */
+
+    /* Match details responsive */
+    .match-details {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 15px 2px;
+    }
+
+    .menu-box {
+        width: fit-content;
+        height: 140px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+    }
+
+    .match-time {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Match details responsive end */
+
+    footer {
+        width: 100%;
+    }
+
+    .menu-link {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*---- Tablet responsive end -----*/
+
+/*---- large screen responsive -----*/
+@media only screen and (min-width:993px) and (max-width:1205px) {
+    .banner {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .banner-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding-top: 6%;
+        margin-left: 5%;
+    }
+
+    .banner-text {
+        width: 400px;
+    }
+
+    #button {
+        margin-right: 60%;
+    }
+
+    .banner img {
+        width: 500px;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .match-details {
+        margin-top: 25px;
+        margin-left: 2%;
+        column-gap: 15px;
+    }
+
+    .menu-box {
+        margin-left: 10px;
+    }
+
+    .match-time {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+        row-gap: 25px;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*---- large screen responsive end-----*/
+
+/*---- larger screen responsive -----*/
+
+@media only screen and (min-width:1206px) and (max-width:1520px) {
+    .banner {
+        margin: 20px;
+        padding-right: 20px;
+    }
+
+    .banner-details {
+        margin-right: 2%;
+    }
+
+    .banner-text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .match-details {
+        column-gap: 50px;
+        margin: auto;
+    }
+
+    .menu-box {
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+
+    footer {
+        width: 1450px;
+        margin: 0;
+    }
+}
+
+/*---- larger screen responsive end -----*/
